@@ -21,12 +21,10 @@ namespace PHnewnew
         const int yTL = 110;
         const int xyC = 30;
         const int xBR = xTL + xyC * 14;
-        Point CornerTopLeft = new Point(xTL, yTL);
+        //Point CornerTopLeft = new Point(xTL, yTL);
 
-        Random rnd;
         Graphics g;
         Pen p;
-        Size blockSize = new Size(xyC, xyC);
         
         List<ABlock> theBlocks = new List<ABlock>();
         BlockRandomizer BlockRnd;
@@ -38,7 +36,6 @@ namespace PHnewnew
         {
             g = CreateGraphics();
             p = new Pen(Brushes.Black);
-            rnd = new Random();
             BlockRnd = new BlockRandomizer();
 
             //Create All White Blocks
